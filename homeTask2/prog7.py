@@ -7,6 +7,7 @@
 """
 
 
+# Простая проверка пароля
 def checkPassword(password):
     # Проверка длины
     if len(password) <= 6:
@@ -14,6 +15,7 @@ def checkPassword(password):
     return True
 
 
+# Проверка углубленная
 def checkPasswordSuper(password):
     if not checkPassword(password):
         return False
@@ -25,6 +27,7 @@ def checkPasswordSuper(password):
     return True
 
 
+# Проверка для профи
 def checkPasswordUltra(password):
     if not checkPasswordSuper(password):
         return False
@@ -52,7 +55,7 @@ def checkPasswordUltra(password):
     return True
 
 
-passwordForCheck = "QwesdfQWs"
+passwordForCheck = "Qwer123"
 print(f'Simple check: {checkPassword(passwordForCheck)}')
 print(f'Super check: {checkPasswordSuper(passwordForCheck)}')
 print(f'Ultra check: {checkPasswordUltra(passwordForCheck)}')

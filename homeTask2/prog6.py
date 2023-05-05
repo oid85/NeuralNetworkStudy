@@ -9,7 +9,7 @@
 import random
 
 # Задаем словарь из возможных слов
-words = ["dog", "cat", "car", "house", "book", "comp", "pen"]
+words = ["dog", "cat", "car", "house", "book", "table", "pen"]
 
 # Случайное предложение
 inputString = f'{random.choice(words)} {random.choice(words)} {random.choice(words)} {random.choice(words)} {random.choice(words)}'
